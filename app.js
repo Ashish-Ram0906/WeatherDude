@@ -52,7 +52,7 @@ function showError(error) {
 }
 
 function getSearchWeather(city) {
-    let api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
 
     fetch(api)
         .then(response => response.json())
